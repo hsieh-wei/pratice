@@ -1,0 +1,3 @@
+/home/wade/work/build/CMakeFiles/rebuild_cache.dir
+/home/wade/work/build/CMakeFiles/edit_cache.dir
+/home/wade/work/build/CMakeFiles/my_app.dir
