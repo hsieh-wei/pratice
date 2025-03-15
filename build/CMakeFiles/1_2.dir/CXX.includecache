@@ -7,4 +7,6 @@
 #IncludeRegexTransform: 
 
 /home/wade/work/1/2.cpp
+stdio.h
+-
 

@@ -29,3 +29,5 @@ int main() {
     printf("Quotient: %d\n", result_divide);
     return 0;
 }
+
+//函數需要多個回傳可以用指標
