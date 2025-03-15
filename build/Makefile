@@ -111,44 +111,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named my_app
+# Target rules for targets named 1_2
 
 # Build rule for target.
-my_app: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_app
-.PHONY : my_app
+1_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1_2
+.PHONY : 1_2
 
 # fast build rule for target.
-my_app/fast:
-	$(MAKE) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/build
-.PHONY : my_app/fast
+1_2/fast:
+	$(MAKE) -f CMakeFiles/1_2.dir/build.make CMakeFiles/1_2.dir/build
+.PHONY : 1_2/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named 1_1
 
-.PHONY : main.o
+# Build rule for target.
+1_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1_1
+.PHONY : 1_1
+
+# fast build rule for target.
+1_1/fast:
+	$(MAKE) -f CMakeFiles/1_1.dir/build.make CMakeFiles/1_1.dir/build
+.PHONY : 1_1/fast
+
+1/1.o: 1/1.cpp.o
+
+.PHONY : 1/1.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/main.cpp.o
-.PHONY : main.cpp.o
+1/1.cpp.o:
+	$(MAKE) -f CMakeFiles/1_1.dir/build.make CMakeFiles/1_1.dir/1/1.cpp.o
+.PHONY : 1/1.cpp.o
 
-main.i: main.cpp.i
+1/1.i: 1/1.cpp.i
 
-.PHONY : main.i
+.PHONY : 1/1.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/main.cpp.i
-.PHONY : main.cpp.i
+1/1.cpp.i:
+	$(MAKE) -f CMakeFiles/1_1.dir/build.make CMakeFiles/1_1.dir/1/1.cpp.i
+.PHONY : 1/1.cpp.i
 
-main.s: main.cpp.s
+1/1.s: 1/1.cpp.s
 
-.PHONY : main.s
+.PHONY : 1/1.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/main.cpp.s
-.PHONY : main.cpp.s
+1/1.cpp.s:
+	$(MAKE) -f CMakeFiles/1_1.dir/build.make CMakeFiles/1_1.dir/1/1.cpp.s
+.PHONY : 1/1.cpp.s
+
+1/2.o: 1/2.cpp.o
+
+.PHONY : 1/2.o
+
+# target to build an object file
+1/2.cpp.o:
+	$(MAKE) -f CMakeFiles/1_2.dir/build.make CMakeFiles/1_2.dir/1/2.cpp.o
+.PHONY : 1/2.cpp.o
+
+1/2.i: 1/2.cpp.i
+
+.PHONY : 1/2.i
+
+# target to preprocess a source file
+1/2.cpp.i:
+	$(MAKE) -f CMakeFiles/1_2.dir/build.make CMakeFiles/1_2.dir/1/2.cpp.i
+.PHONY : 1/2.cpp.i
+
+1/2.s: 1/2.cpp.s
+
+.PHONY : 1/2.s
+
+# target to generate assembly for a file
+1/2.cpp.s:
+	$(MAKE) -f CMakeFiles/1_2.dir/build.make CMakeFiles/1_2.dir/1/2.cpp.s
+.PHONY : 1/2.cpp.s
 
 # Help Target
 help:
@@ -157,11 +197,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... 1_2"
 	@echo "... edit_cache"
-	@echo "... my_app"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... 1_1"
+	@echo "... 1/1.o"
+	@echo "... 1/1.i"
+	@echo "... 1/1.s"
+	@echo "... 1/2.o"
+	@echo "... 1/2.i"
+	@echo "... 1/2.s"
 .PHONY : help
 
 

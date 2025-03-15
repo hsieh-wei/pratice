@@ -57,27 +57,27 @@ include CMakeFiles/my_app.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/my_app.dir/flags.make
 
-CMakeFiles/my_app.dir/main.cpp.o: CMakeFiles/my_app.dir/flags.make
-CMakeFiles/my_app.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wade/work/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_app.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_app.dir/main.cpp.o -c /home/wade/work/main.cpp
+CMakeFiles/my_app.dir/1/1.cpp.o: CMakeFiles/my_app.dir/flags.make
+CMakeFiles/my_app.dir/1/1.cpp.o: ../1/1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wade/work/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_app.dir/1/1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_app.dir/1/1.cpp.o -c /home/wade/work/1/1.cpp
 
-CMakeFiles/my_app.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_app.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wade/work/main.cpp > CMakeFiles/my_app.dir/main.cpp.i
+CMakeFiles/my_app.dir/1/1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_app.dir/1/1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wade/work/1/1.cpp > CMakeFiles/my_app.dir/1/1.cpp.i
 
-CMakeFiles/my_app.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_app.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wade/work/main.cpp -o CMakeFiles/my_app.dir/main.cpp.s
+CMakeFiles/my_app.dir/1/1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_app.dir/1/1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wade/work/1/1.cpp -o CMakeFiles/my_app.dir/1/1.cpp.s
 
 # Object files for target my_app
 my_app_OBJECTS = \
-"CMakeFiles/my_app.dir/main.cpp.o"
+"CMakeFiles/my_app.dir/1/1.cpp.o"
 
 # External object files for target my_app
 my_app_EXTERNAL_OBJECTS =
 
-my_app: CMakeFiles/my_app.dir/main.cpp.o
+my_app: CMakeFiles/my_app.dir/1/1.cpp.o
 my_app: CMakeFiles/my_app.dir/build.make
 my_app: CMakeFiles/my_app.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wade/work/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable my_app"
