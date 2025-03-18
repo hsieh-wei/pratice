@@ -1,6 +1,7 @@
 /home/wade/work/build/CMakeFiles/rebuild_cache.dir
 /home/wade/work/build/CMakeFiles/1_5.dir
 /home/wade/work/build/CMakeFiles/1_4.dir
+/home/wade/work/build/CMakeFiles/1_6.dir
 /home/wade/work/build/CMakeFiles/1_3.dir
 /home/wade/work/build/CMakeFiles/1_2.dir
 /home/wade/work/build/CMakeFiles/edit_cache.dir
