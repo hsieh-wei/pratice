@@ -1,64 +1,56 @@
-### **C 語言韌體開發複習大綱**
+### **C 語言複習大綱**
 
-#### **1. 基礎語法與結構**
-   - 變數與資料型態 (`int`, `char`, `float`, `double`, `void`)
-   - 陣列 (`array`)、字串 (`string`)
-   - 指標 (`pointer`)
-   - 結構體 (`struct`) 與聯合體 (`union`)
-   - 列舉 (`enum`)
-   - 型態定義 (`typedef`、`#define`)
+#### **1. 基礎語法與控制結構**
+   - C 語言的基本結構與語法
+   - 資料型態 (`char, int, float, double, void`)
+   - 變數與常數 (`const, #define`)
+   - 運算子與優先順序
+     - 算術運算子 (`+ - * / %`)
+     - 位元運算子 (`& | ^ ~ << >>`)
+     - 比較與邏輯運算子 (`== != > < >= <= && || !`)
+     - 指派運算子 (`= += -= *= /= &= |= ^= <<= >>=`)
+   - 流程控制 (`if-else, switch-case, for, while, do-while, break, continue`)
 
-#### **2. 控制流程**
-   - `if-else` 條件判斷
-   - `switch-case`
-   - 迴圈 (`for`, `while`, `do-while`)
-   - `break` 與 `continue`
-   - `goto` 的使用與避免
+#### **2. 陣列與指標**
+   - 一維陣列、二維陣列的基本操作
+   - 指標的概念與基本使用
+   - 陣列與指標的關係
+   - 指標運算 (`*`, `&`, `->`, `[]` 方式存取)
+   - 字串 (`char` 陣列 vs `char*`，`strlen`, `strcpy`, `strcmp`)
 
-#### **3. 函式 (Function)**
-   - 參數傳遞 (`pass-by-value` vs `pass-by-reference`)
-   - `static`、`inline` 關鍵字
-   - `const` 的應用
-   - 函式指標 (`function pointer`)
+#### **3. 函式與程式架構**
+   - 函式定義與呼叫 (`return type, parameter, prototype`)
+   - 傳值與傳址 (`pass by value vs pass by pointer`)
+   - `static` 與 `inline` 函式
+   - 函式指標 (`typedef, callback function`)
 
-#### **4. 記憶體管理**
-   - `malloc`, `calloc`, `realloc`, `free`
-   - 動態記憶體與堆疊 (`stack` vs `heap`)
-   - 避免記憶體洩漏 (`memory leak`)
+#### **4. 記憶體管理與結構體**
+   - `sizeof` 運算子與記憶體對齊 (`alignment & padding`)
+   - `struct` 與 `union`
+   - `typedef` 與 `enum`
+   - 指標與結構體 (`->` 運算子)
+   - 動態記憶體配置 (`malloc, calloc, realloc, free`)
+   - 記憶體洩漏與如何避免 (`NULL pointer checks, memory profiling`)
 
-#### **5. 指標 (Pointer) 進階**
-   - 指標與陣列
-   - 指標運算 (`pointer arithmetic`)
-   - 指標與結構體
-   - 多重指標 (`double pointer`)
-   - 指標與函式 (函式指標、回呼函式)
+#### **5. 進階指標與陣列操作**
+   - 指標陣列 (`char* array[]` vs `char**`)
+   - 指標運算 (`ptr++, *(ptr + i)`)
+   - 指標與函式 (`函式指標陣列, `callback function`)
+   - `volatile` 與 `const` 指標 (`const int*`, `int* const`, `const int* const`)
 
-#### **6. 位元運算 (Bitwise Operations)**
-   - `&`, `|`, `^`, `~`, `<<`, `>>`
-   - 掩碼 (Bit Masking)
-   - 位元欄位 (`bit-fields`)
+#### **6. 位元操作與最佳化**
+   - 位元運算 (`& | ^ ~ << >>`)
+   - 掩碼 (`masking`)、設置/清除/切換位元 (`set, clear, toggle bit`)
+   - 位元欄位 (`bit fields`)
+   - `#pragma` 的應用 (`pack, optimize`)
 
-#### **7. 預處理器 (Preprocessor)**
-   - `#define`, `#include`
-   - 巨集 (`macro`) 與 `inline function`
-   - 條件編譯 (`#ifdef`, `#ifndef`, `#if`, `#endif`)
+#### **7. 預處理器與巨集**
+   - `#define` 與 `const` 的比較
+   - 巨集函式 (`#define FUNCTION(x) (x*x)`)
+   - `#ifdef, #ifndef, #if, #else, #endif`
+   - `#include` 與條件式編譯 (`#pragma once, include guard`)
 
-#### **8. 中斷與系統層相關**
-   - `volatile` 關鍵字的用途
-   - 記憶體對齊 (`memory alignment`)
-   - 周邊存取 (`memory-mapped IO`)
-   - `ISR` (Interrupt Service Routine)
-   - `register` 變數
-
-#### **9. 嵌入式系統與 C**
-   - `C` 與組合語言 (`assembly`) 交互
-   - `const`, `volatile`, `restrict` 修飾詞
-   - 低功耗管理 (`low power management`)
-   - `watchdog timer` (WDT) 的使用
-
-#### **10. 安全與最佳化**
-   - 陣列邊界檢查 (`buffer overflow` 避免)
-   - 防止 `NULL pointer dereference`
-   - `static` 變數與 `extern` 變數的區別
-   - 函式內聯 (`inline function`)
-   - 運行時間最佳化 (`time complexity` vs `space complexity`)
+#### **8. 多檔案專案與編譯**
+   - `extern` 與變數作用域 (`global, static, extern`)
+   - `.h` 和 `.c` 檔案的組織 (`interface vs implementation`)
+   - Makefile 基礎概念 (`make, gcc, dependency management`)
