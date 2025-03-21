@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/1_1.dir/1/1.cpp.o  -o 1_1 
+/nix/store/9bv7dcvmfcjnmg5mnqwqlq2wxfn8d7yi-gcc-wrapper-13.2.0/bin/gcc CMakeFiles/1_1.dir/1_basic/1.c.o -o 1_1

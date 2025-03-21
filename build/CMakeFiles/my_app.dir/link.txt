@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/my_app.dir/1/1.cpp.o  -o my_app 
