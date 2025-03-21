@@ -14,7 +14,7 @@ add_executable(0_6 ${SRC0}/6.c)
 
 add_executable(1_1 ${SRC1}/1.c)
 add_executable(1_2 ${SRC1}/2.c)
-#add_executable(1_3 ${SRC1}/3.c)
+add_executable(1_3 ${SRC1}/3.c)
 #add_executable(1_4 ${SRC1}/4.c)
 #add_executable(1_5 ${SRC1}/5.c)
 #add_executable(1_6 ${SRC1}/6.c)

@@ -220,6 +220,19 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/1_2.dir/build.make CMakeFiles/1_2.dir/build
 .PHONY : 1_2/fast
 
+#=============================================================================
+# Target rules for targets named 1_3
+
+# Build rule for target.
+1_3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1_3
+.PHONY : 1_3
+
+# fast build rule for target.
+1_3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1_3.dir/build.make CMakeFiles/1_3.dir/build
+.PHONY : 1_3/fast
+
 0_prepratice/1.o: 0_prepratice/1.c.o
 .PHONY : 0_prepratice/1.o
 
@@ -412,6 +425,30 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/1_2.dir/build.make CMakeFiles/1_2.dir/1_basic/2.c.s
 .PHONY : 1_basic/2.c.s
 
+1_basic/3.o: 1_basic/3.c.o
+.PHONY : 1_basic/3.o
+
+# target to build an object file
+1_basic/3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1_3.dir/build.make CMakeFiles/1_3.dir/1_basic/3.c.o
+.PHONY : 1_basic/3.c.o
+
+1_basic/3.i: 1_basic/3.c.i
+.PHONY : 1_basic/3.i
+
+# target to preprocess a source file
+1_basic/3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1_3.dir/build.make CMakeFiles/1_3.dir/1_basic/3.c.i
+.PHONY : 1_basic/3.c.i
+
+1_basic/3.s: 1_basic/3.c.s
+.PHONY : 1_basic/3.s
+
+# target to generate assembly for a file
+1_basic/3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1_3.dir/build.make CMakeFiles/1_3.dir/1_basic/3.c.s
+.PHONY : 1_basic/3.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -428,6 +465,7 @@ help:
 	@echo "... 0_6"
 	@echo "... 1_1"
 	@echo "... 1_2"
+	@echo "... 1_3"
 	@echo "... 0_prepratice/1.o"
 	@echo "... 0_prepratice/1.i"
 	@echo "... 0_prepratice/1.s"
@@ -452,6 +490,9 @@ help:
 	@echo "... 1_basic/2.o"
 	@echo "... 1_basic/2.i"
 	@echo "... 1_basic/2.s"
+	@echo "... 1_basic/3.o"
+	@echo "... 1_basic/3.i"
+	@echo "... 1_basic/3.s"
 .PHONY : help
 
 

@@ -6,6 +6,7 @@ int main(){
   printf("float size: %zu bytes\n", sizeof(float));
   printf("double size: %zu bytes\n", sizeof(double));
   printf("void * size: %zu bytes\n", sizeof(void *));
+  return 0;
   /*
   char size: 1 bytes
   int size: 4 bytes
